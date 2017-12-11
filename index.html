@@ -2,181 +2,54 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>A Full-Stack Designer's Resume</title>
 		<link rel="shortcut icon" href="favicon.ico">
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/createjs.js"></script>
 		<script src="js/af.min.js"></script>
-		<script src="js/logo_animation_1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Untitled-1.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 <body>
 	<div id='af' namespace='lib'>
 		
 		<plug touch weixin></plug>
-		<weixin title='doudou's family&happylife' description='豆豆的快乐生活2015'></weixin>
+		<weixin title='A Full-Stack Designer's Resume' description='一个全栈设计师的简历'></weixin>
 		
 		<swipe effect='translation' ease='cubicInOut'>
 			<scene name='scene_1'></scene>
-			<scene name='scene_2'></scene>
-			<scene name='scene_3'></scene>
-			<scene name='scene_4'></scene>
-			<scene name='scene_5'></scene>
-			<scene name='scene_6'></scene>
-			<scene name='scene_7'></scene>
-			<scene name='scene_8'></scene>
 		</swipe>
 		
     		<scene name="scene_1"> 
-        		<position name='title_mc' left='320' middle='0'></position>
-        		<position name='bar_mc' center='0' bottom='0'></position>
-        		<position name='bg_mc' scale='cover'></position>
+        		<position name='jiantou'></position>
+        		<position name='mov_1'></position>
+        		<position name='bg_mc'></position>
         		<action type='init'>
             		<next>
-                		<fragment type='stop' name='title_mc' frame='0'></fragment>
+                		<fragment type='stop' name='mov_1' frame='0'></fragment>
             		</next>
         		</action>
         		<action type='show'>
             		<next once>
-                		<fragment type='play' name='title_mc' start='start' end='end'></fragment>
+                		<fragment type='play' name='mov_1' start='start' end='step_1'></fragment>
             		</next>
         		</action>
-        		<!--<action type='swipe_top'>
-        			<next>
-        				<fragment type='turn' direction='bottom' target='scene_2' effect='translation' ease='cubicInOut'></fragment>
+        		<action type='swipe_top'>
+        			<next once exit>
+        				<fragment type='play' name='mov_1' start='step_1' end='step_2'></fragment>
         			</next>
-        		</action>-->
-    		</scene>
-    		
-    		<scene name="scene_2"> 
-        		<position name='title_mc' center='0' middle='0'></position>
-        		<position name='bar_mc' center='0' bottom='0'></position>
-        		<position name='bg_mc' scale='cover'></position>
-        		<action type='init'>
-            		<next>
-                		<fragment type='stop' name='title_mc' frame='0'></fragment>
-            		</next>
-        		</action>
-        		<action type='show'>
-            		<next once>
-                		<fragment type='play' name='title_mc' start='start' end='end'></fragment>
-            		</next>
-        		</action>
-        		<!--<action type='swipe_top'>
-        			<next>
-        				<fragment type='turn' direction='bottom' target='scene_3' effect='translation' ease='cubicInOut'></fragment>
+        			<next once exit>
+        				<fragment type='play' name='mov_1' start='step_2' end='step_3'></fragment>
         			</next>
-        		</action>-->
-    		</scene>
-    		
-    		<scene name="scene_3"> 
-        		<position name='title_mc' center='0' middle='0'></position>
-        		<position name='bar_mc' center='0' bottom='0'></position>
-        		<position name='bg_mc' scale='cover'></position>
-        		<action type='init'>
-            		<next>
-                		<fragment type='stop' name='title_mc' frame='0'></fragment>
-            		</next>
-        		</action>
-        		<action type='show'>
-            		<next once>
-                		<fragment type='play' name='title_mc' start='start' end='end'></fragment>
-            		</next>
-        		</action>
-        		<!--<action type='swipe_top'>
-        			<next>
-        				<fragment type='turn' direction='bottom' target='scene_4' effect='translation' ease='cubicInOut'></fragment>
+        			<next once exit>
+        				<fragment type='play' name='mov_1' start='step_3' end='step_4'></fragment>
         			</next>
-        		</action>-->
-    		</scene>
-    		
-    		<scene name="scene_4"> 
-        		<position name='title_mc' center='0' middle='0'></position>
-        		<position name='bar_mc' center='0' bottom='0'></position>
-        		<position name='bg_mc' scale='cover'></position>
-        		<action type='init'>
-            		<next>
-                		<fragment type='stop' name='title_mc' frame='0'></fragment>
-            		</next>
-        		</action>
-        		<action type='show'>
-            		<next once>
-                		<fragment type='play' name='title_mc' start='start' end='end'></fragment>
-            		</next>
-        		</action>
-        		<!--<action type='swipe_top'>
-        			<next>
-        				<fragment type='turn' direction='bottom' target='scene_5' effect='translation' ease='cubicInOut'></fragment>
+        			<next once exit>
+        				<fragment type='play' name='mov_1' start='step_4' end='step_5'></fragment>
         			</next>
-        		</action>-->
-    		</scene>
-    		
-    		<scene name="scene_5"> 
-        		<position name='title_mc' center='0' middle='0'></position>
-        		<position name='bar_mc' center='0' bottom='0'></position>
-        		<position name='bg_mc' scale='cover'></position>
-        		<action type='init'>
-            		<next>
-                		<fragment type='stop' name='title_mc' frame='0'></fragment>
-            		</next>
-        		</action>
-        		<action type='show'>
-            		<next once>
-                		<fragment type='play' name='title_mc' start='start' end='end'></fragment>
-            		</next>
-        		</action>
-        		<!--<action type='swipe_top'>
-        			<next>
-        				<fragment type='turn' direction='bottom' target='scene_4' effect='translation' ease='cubicInOut'></fragment>
+        			<next once exit>
+        				<fragment type='play' name='mov_1' start='step_5' end='end'></fragment>
         			</next>
-        		</action>-->
-    		</scene>
-    		
-    		<scene name="scene_6"> 
-        		<position name='title_mc' center='0' middle='0'></position>
-        		<position name='bar_mc' center='0' bottom='0'></position>
-        		<position name='bg_mc' scale='cover'></position>
-        		<action type='init'>
-            		<next>
-                		<fragment type='stop' name='title_mc' frame='0'></fragment>
-            		</next>
-        		</action>
-        		<action type='show'>
-            		<next once>
-                		<fragment type='play' name='title_mc' start='start' end='end'></fragment>
-            		</next>
-        		</action>
-    		</scene>
-    		
-    		<scene name="scene_7"> 
-        		<position name='title_mc' center='0' middle='0'></position>
-        		<position name='bar_mc' center='0' bottom='0'></position>
-        		<position name='bg_mc' scale='cover'></position>
-        		<action type='init'>
-            		<next>
-                		<fragment type='stop' name='title_mc' frame='0'></fragment>
-            		</next>
-        		</action>
-        		<action type='show'>
-            		<next once>
-                		<fragment type='play' name='title_mc' start='start' end='end'></fragment>
-            		</next>
-        		</action>
-    		</scene>
-    		
-    		<scene name="scene_8"> 
-        		<position name='title_mc' center='0' middle='0'></position>
-        		<position name='bar_mc' center='0' bottom='0'></position>
-        		<position name='bg_mc' scale='cover'></position>
-        		<action type='init'>
-            		<next>
-                		<fragment type='stop' name='title_mc' frame='0'></fragment>
-            		</next>
-        		</action>
-        		<action type='show'>
-            		<next once>
-                		<fragment type='play' name='title_mc' start='start' end='end'></fragment>
-            		</next>
         		</action>
     		</scene>
     		
