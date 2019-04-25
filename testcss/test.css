@@ -113,8 +113,8 @@
 
 .title_02 {
 	position:absolute;
-	top:3%;
 	width:100%;
+	margin-top:0;
 }
 
 .txt_01 {
