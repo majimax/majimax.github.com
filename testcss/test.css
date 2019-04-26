@@ -44,6 +44,12 @@
 	margin-top:-11px;
 }
 
+.btn_00 {
+	position: absolute;
+	bottom: 1%;
+	width: 100%;
+}
+
 .logo {
 	position:absolute;
 	top:2%;
